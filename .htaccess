@@ -1,0 +1,14 @@
+#deny from all
+#deny from 192.168.1.2
+# برای محدود کردن و فیلتر یک ای پی یا کل سرور
+
+Options  All -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase  /store_website/
+    RewriteRule ^index\.php - [L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . index.php [L]
+</IfModule>

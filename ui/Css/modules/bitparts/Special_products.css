@@ -1,0 +1,67 @@
+.mom-gallery-goods{
+    overflow: hidden;
+}
+.galery-goods {
+    width: 100%;
+    margin-top: 100px;
+    background-color: #dfdfdf;
+    height: 467px;
+    display: flex;
+    flex-direction: row;
+}
+.gg-div-img{
+    width: 67%;
+    height: 100%;
+    direction: rtl;
+}
+.gg-div-img img{
+    width: auto;
+    height: 100%;
+}
+.gg-describtion {
+    background-color: rgb(247,247,248);
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gg-describtion p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+.gg-describtion span {
+    font-size: 14px;
+    color: gray;
+    width: 80%;
+    margin-bottom: 11px;
+    margin-top: 5px;
+    text-align: center;
+}
+.gg-descriptoin-child {
+    height: auto;
+    width: 233px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slid-describtion{
+    height: auto;
+    width:auto;
+    display: flex;
+}
+.slid-describtion div{
+    width: 15px;
+    height: 15px;
+    border: 2px solid gray;
+    margin: 4px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.slid-describtion div:hover{
+    background-color: black;
+}

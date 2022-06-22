@@ -1,0 +1,98 @@
+.list-groups {
+    width: 100%;
+    cursor: pointer;
+    /* box-shadow: inset 0px 0px 2px 0px black; */
+    height: 100%;
+    /* padding-top: 5px; */
+    display: flex;
+    border-left: 2px solid #a9a9a987;
+    border-right: 2px solid #a9a9a987;
+    background-color: white;
+    /* overflow: hidden; */
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.list-groups span {
+    width: 70%;
+}
+.list-g-p {
+    height: 60%;
+}
+.list-g-p2{
+    height: 30%;
+    transition: all 0.2s;
+}
+.tabslist-hp {
+    top: 38px;
+    width: 100%;
+    z-index: 5;
+    overflow: hidden;
+    transition: all 0.2s;
+    height: 0px;
+    position: absolute;
+}
+.tabs-list {
+    position: absolute;
+    overflow: hidden;
+    top: 0px;
+    display: flex;
+    border: 2px solid #a9a9a926;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+.tabs-list span{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    align-items: center;
+}
+.tabs-list p {
+    padding: 5px;
+    margin: 0;
+    padding-right: 20px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-bottom: 2px solid #ededed;
+    background-color: white;
+}
+.tabs-list a {
+    height: 2px;
+    width: 0%;
+    position: relative;
+    transition: all 0.2s;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    top: -2px;
+    background-color: orange;
+}
+.btn-beat{
+    height: 2px;
+    width: 0%;
+    position: relative;
+    transition: all 0.2s;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    background-color: orange;
+}
+.btn_tabs p{
+    margin: 5px;
+    margin-bottom: 0;
+    cursor: pointer
+}
+.btn_tabs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}

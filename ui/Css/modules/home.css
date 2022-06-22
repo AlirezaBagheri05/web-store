@@ -1,0 +1,25 @@
+.container-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mom-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.content-2 {
+    max-width: 100%;
+    /* margin: 77px; */
+}
+.content_child {
+    display: flex;
+    /* position: relative; */
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1168px;
+}

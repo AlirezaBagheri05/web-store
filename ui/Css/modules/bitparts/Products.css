@@ -1,0 +1,34 @@
+.table-goods-post:hover {
+    background-color: #76767621;
+    border-top: 3px solid orange;
+}
+.table-goods-post img {
+    width: auto;
+    height: 65%;
+    padding-top: 13px;
+}
+.table-goods-post p {
+    font-size: 15px;
+    text-align: center;
+    /* padding-top: 9px; */
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.table-goods-post span {
+    font-size: 13px;
+    color: orange;
+}
+.table-goods-post {
+    width: auto;
+    overflow: hidden;
+    height: 241px;
+    min-width: 200px;
+    top: -3px;
+    position: relative;
+    display: flex;
+    /*border-top: 3px solid #d2d2d2;*/
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}

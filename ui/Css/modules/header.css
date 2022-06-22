@@ -1,0 +1,300 @@
+.div-head {
+    height: 635px;
+    margin: 0;
+    transition: all cubic-bezier(0.65, 0.05, 0.36, 1) 0.5s;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-h-top {
+    height: 31px;
+    width: 100%;
+    display: flex;
+    background-color: #092143;
+    justify-content: space-between;
+    align-items: center;
+}
+.div-h-top div:last-child {
+    display: flex;
+    width: 314px;
+    justify-content: flex-start;
+}
+.div-h-top div:last-child p {
+    margin: 0;
+    padding: 7px;
+    font-size: 12px;
+    padding-right: 10px;
+    border-right: 1px solid #ffffff47;
+    color: white;
+}
+.div-h-top div:first-child {
+    margin: 0;
+    height: 100% !important;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div-h-top div:first-child p{
+    margin: 0;
+    font-size: 10px;
+    margin-right: 80px;
+    color: white;
+}
+.div-h-top div:first-child img {
+    width: 20px;
+    margin: 4px;
+    height: auto;
+}
+.div-h-top div:first-child span {
+    display: flex;
+    filter: invert(1);
+    padding: 10px;
+}
+.div-h-org {
+    height: 64.5px;
+    width: 100%;
+    background-color: #092143;
+    display: flex;
+    border-top: 1px solid #ffffff47;
+    justify-content: center;
+    align-items: center;
+}
+.div-h-org div:first-child {
+    height: 100%;
+    width: 23%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.div-h-org div:first-child img {
+    height: 99%;
+    filter: invert(1);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+     right: 48px; 
+    align-items: center;
+    justify-content: center;
+}
+.div-h-org div:nth-child(2) {
+    width: 48.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+}
+.div-h-org div:nth-child(2) form {
+    width: 100%;
+    height: 43.8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.div-h-org div:nth-child(2) input[type='search'] {
+    margin: 0;
+    width: 65.89%;
+    border: none;
+    padding: 15px;
+    border-top-right-radius: 25px;
+    outline: none !important;
+    border-bottom-right-radius: 25px;
+    height: 100%;
+}
+.div-h-org div:nth-child(2) input[type='submit'] {
+    margin: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+    background-color: #f5a418;
+    width: 7.83%;
+}
+.div-h-org div:nth-child(2) select {
+    direction: rtl;
+    border: none;
+    width: 25.72%;
+    padding-right: 10px;
+    cursor: pointer;
+    height: 100%;
+    border-right: 1px solid #00000012;
+}
+.div-h-org div:nth-child(2) select:focus {
+    outline: none;
+}
+.div-h-org div:nth-child(2) img {
+    width: 25px;
+    position: absolute;
+    left: 15px;
+    cursor: pointer;
+    top: 10px;
+}
+.div-h-org div:nth-child(2) option {
+    height: 50px;
+    
+}
+.div-h-org div:nth-child(3) {
+    width: 28.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.form-control{
+    direction: rtl;
+}
+.div-dashborad img {
+    width: auto;
+    height: 22px;
+    filter: invert(1);
+    padding: 9px;
+    cursor: pointer;
+}
+.div-dashborad a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+}
+.div-dashborad p {
+    color: white;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 10px;
+}
+.div-h-tabs {
+    height: 39px;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.div-right-tabs {
+    width: 265px;
+    display: flex;
+    margin-right: 83px;
+    background-color: white;
+    height: 100%;
+    justify-content: center;
+    flex-direction: row;
+}
+.div-left-tabs {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding-right: 10px;
+    height: 100%;
+    width: 75%;
+}
+
+.dlt-1{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+}
+
+.dlt-2{
+    display: flex;
+    width: auto;
+    height: 100%;
+    margin-left: 80px;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    left: 0;
+}
+.div-h-gallery {
+    width: 100%;
+    margin: 0px;
+    /* margin-right: 10px; */
+    /* margin-left: 10px; */
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    padding-top: 0;
+    box-sizing: border-box;
+    height: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.div-h-gallery img {
+    height: auto;
+    filter: brightness(0.5);
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+}
+.div-h-gallery div {
+    display: flex;
+    width: 270px;
+    z-index: 2;
+    justify-content: space-around;
+    align-items: center;
+}
+.div-h-gallery div p:first-child {
+    width: 110px;
+    padding: 9px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-top: 17.5px;
+    background-color: #f5a418;
+    border-radius: 25px;
+}
+
+.div-h-gallery div p:last-child {
+    width: 107px;
+    padding: 7px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    margin-top: 17.5px;
+    background-color: #ffa50000;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: 2px solid white;
+}
+.div-h-gallery span {
+    z-index: 2;
+    color: #f5a418;
+}
+.div-h-gallery h1 {
+    z-index: 2;
+    text-align: center;
+    margin-top: 13px;
+    width: 664px;
+    margin-bottom: 0;
+    color: white;
+}
+.cover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 1;
+}
+.div-head h4 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    margin: 0;
+    bottom: 0;
+}
+

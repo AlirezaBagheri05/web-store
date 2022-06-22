@@ -1,0 +1,53 @@
+.section-buy p {
+    font-size: 14px;
+    color: gray;
+    text-align: right;
+    margin: 0;
+    padding: 2px;
+}
+.section-buy{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.section-buy span {
+    font-size: 40px;
+    display: flex;
+    color: rgb(245 164 24);
+    margin: 3px;
+    font-weight: bold;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-buy div {
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.section-buy p:first-of-type {
+    font-size: 19px;
+    color: black;
+    /* float: revert; */
+    font-weight: bold;
+    /* text-align: right; */
+    margin: 0;
+    padding: 2px;
+}
+.mom-text-buy{
+    width:100%;
+    height: 136px;
+    display:flex;
+    justify-content: space-between;
+}
+/*.mom-text-buy div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}*/
