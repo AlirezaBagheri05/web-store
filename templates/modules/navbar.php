@@ -1,7 +1,7 @@
 <div class="div-head">
     <div class="div-h-top">
         <div>
-            <p>اولین سایت فروشی من که به صورت رسمی روی گوگل شروع به فعالیت خواهد کرد</p>
+            <p>اولین سایت فروشی من که به صورت رسمی به امید خدا روی گوگل شروع به فعالیت خواهد کرد</p>
             <span>
                 <img src="<?PHP echo SITE_IMG; ?>dashboard.png" alt=""/>
                 <img src="<?PHP echo SITE_IMG; ?>dashboard.png" alt=""/>
