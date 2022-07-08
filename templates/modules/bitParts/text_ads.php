@@ -31,22 +31,23 @@
                 ),
             );
         }
-        echo "<div class='mom-text-buy'>";
+        $ANS =  "<div class='mom-text-buy'>";
         global $num;
         $num = 1;
         foreach ($ops_v as $value) {
-            echo "<div>";
-                echo "<div class='section-buy'>";
-                echo "<span style='color:$color_3'>$num.</span>";
-                echo "<div>";
-                    echo "<p style='color:$color'>$value[0]</p>";
-                    echo "<p style='color:$color'>$value[1]</p>";
-                echo "</div>";
-                echo "</div>";
-            echo "</div>";
+            $ANS .= "<div>";
+                $ANS .= "<div class='section-buy'>";
+                    $ANS .= "<span style='color:$color_3'>$num.</span>";
+                    $ANS .= "<div>";
+                        $ANS .= "<p style='color:$color'>$value[0]</p>";
+                        $ANS .= "<p style='color:$color'>$value[1]</p>";
+                    $ANS .= "</div>";
+                $ANS .= "</div>";
+            $ANS .= "</div>";
             $num++;
         }
-        echo "</div>";
+        $ANS .= "</div>";
+        return $ANS;
     }
 ?>
 

@@ -8,9 +8,13 @@
                 3 => "LINK 4",
             );
         }
-        foreach ($info as $value) {
-            echo "<span>$value</span>";
+        $count = count($info);
+        for($i =1;$i <($count/2);$i++){
+            echo "<span>$info[$i]</span>";
         }
+//        foreach ($info as $value) {
+//            echo "<span>$value</span>";
+//        }
     }
 ?>
 <!--<span>نمایندگی های ما</span>

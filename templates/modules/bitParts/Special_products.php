@@ -15,36 +15,38 @@
         $img = "<div class='gg-div-img'>
                         <img src='".SITE_IMG."nody.jpg' alt='snow'/>
                     </div>";
-        $info = "<div style='background-color:$color_1;' class='gg-describtion'>
-            <div  class='gg-descriptoin-child'>
-                <p>پرفروش ترینها</p>
-                <span>محصولات چرمی و دست دوز با امکانتات منحصر به فرد خود</span>
-                <div style='background-color:$color_2;border-top-color:$color_3' class='table-goods-post-2  table-goods-post '> 
-                        <img src='".SITE_IMG."والپیپر فانتزی دخترانه.png' alt=''/>
-                        <p>کیف چرمی</p>
-                        <span style='color:$color_3'>48000 تومان</span>
-                </div>
-                <div class='slid-describtion'>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>";
-        echo "<div class='mom-gallery-goods' >
-               <div class='galery-goods'>";
+        $info = "<div style='background-color:$color_1;' class='gg-describtion'>";
+        $info .= "<div  class='gg-descriptoin-child'>";
+        $info .= echo_strings('p',null,64);
+        $info .= "<span>محصولات چرمی و دست دوز با امکانتات منحصر به فرد خود</span>";
+        $info .= "<div style='background-color:$color_2;border-top-color:$color_3' class='table-goods-post-2  table-goods-post'>";
+        $info .= "<img src='".SITE_IMG."والپیپر فانتزی دخترانه.png' alt=''/>";
+        $info .= "<p>کیف چرمی</p>";
+        $info .= "<span style='color:$color_3'>48000 تومان</span>";
+        $info .= "</div>";
+        $info .= "<div class='slid-describtion'>";
+        $info .= "<div></div>";
+        $info .= "<div></div>";
+        $info .= "</div>";
+        $info .= "</div>";
+        $info .= "</div>";
+
+    $ANS = "<div class='mom-gallery-goods'>";
+    $ANS .= "<div class='galery-goods'>";
         if($dir){
-            echo $info;
-            echo $img;
+            $ANS .= $info;
+            $ANS .= $img;
         } else {
-            echo $img;
-            echo $info;
+            $ANS .= $img;
+            $ANS .= $info;
         }
-    echo "</div>";
+        $ANS .= "</div>";
     if($ops){
-        text_ads($ops_v, $colors,$mood);
+        $ANS .= text_ads($ops_v, $colors,$mood);
     }
-        
-    echo "</div>";
+
+        $ANS .= "</div>";
+        return $ANS;
     }
 
 

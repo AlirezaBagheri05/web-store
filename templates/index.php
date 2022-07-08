@@ -7,7 +7,7 @@ function get_title(){
 function get_contents(){
     
     include_once 'modules/header.php';
-    
+
     include_once 'modules/home.php';
     
     include_once 'modules/footer.php';

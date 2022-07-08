@@ -2,35 +2,35 @@
 <div class="mom-content"> 
     <div class="content-2">
         <div class="content_child">
-                <?PHP Products_gallery(false,null) ?>
-                <?PHP 
-                $colors_1 = array(
-                "color_1" => "rgb(247,247,248)",
-                "color_2" => "#f0f0f0",
-                "color_3" => "red",
-                );
-                $ops_v = array(
-                        0 => array(
-                                0 => "خرید به صورت آنلاین",
-                                1 => "به همراه تخفیف های ویژه",
-                            ),
-                    );
-                special_products(false, $colors_1, false, $ops_v,null);
-                ?> 
-                <?PHP 
-                $colors = array(
-                "color_1" => "",
-                "color_2" => "gray",
-                "color_3" => "black",
-                "color_4" => "gray",
-                );
-                Products_gallery(false,$colors) 
-                ?> 
-                <?PHP 
-                special_products(true, $colors_1, true, null,null);
-                ?> 
-                <?PHP // include_once 'templates/options/T_goods-gallery_2.php'; ?>
-                <?Php // include_once 'templates/options/T_goods-compeny_0.php'; ?>
+                <?PHP
+                $arrages = array();
+
+                $colors = get_Products_gallery_by_id(2);
+                $arrages[0] =  Products_gallery(false,$colors);
+
+                $colors_1 = get_Products_gallery_by_id(1);
+                $arrages[1] =  special_products(false, $colors_1, false, null,null);
+
+                $colors = get_Products_gallery_by_id(3);
+                $arrages[2] = Products_gallery(false,$colors);
+
+                $colors_1 = get_Products_gallery_by_id(4);
+                $arrages[3] = special_products(true, $colors_1, true, null,null);
+
+                $colors = get_Products_gallery_by_id(5);
+                $arrages[4] = Products_gallery(false,$colors);
+
+                $colors_1 = get_Products_gallery_by_id(6);
+                $arrages[5] = special_products(true, $colors_1, true, null,null);
+
+                $ms = get_home_ms_by_id(1);
+                $count =  count($ms)/2;
+                for($i = 1;$i<$count;$i++){
+                    if(isset($arrages[$ms[$i]])){
+                        echo $arrages[$ms[$i]];
+                    }
+                }
+                ?>
         </div>
     </div>
 </div>

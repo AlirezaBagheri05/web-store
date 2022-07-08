@@ -28,7 +28,7 @@ function creat_db_users($tb_name){
     }
     mysqli_close($link);
 }
-
+// creat_db_users(TB_US_NM);
 function select_user_by_name($username){
     $link = mysqli_connect(SERVER_NAME,USER_NAME,USER_PASSWORD,DB_NM);
     if (mysqli_connect_errno($link)){
