@@ -28,8 +28,9 @@ function get_home_ms_by_id($id){
         return _DIS_;
     }
     $result = mysqli_query($link,$qur);
-    if(!$result){
-        return _SEL_;
+    if($result){
+        $qur = "select * from ".TB_HOME_MS." where id = '1'" ;
+        $result = mysqli_query($link,$qur);
     }
     $values = mysqli_fetch_array($result);
     return $values;

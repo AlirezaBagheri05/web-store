@@ -94,6 +94,9 @@ function delete_strings($id){
 
 function echo_strings($tag,$attr=null,$id){
     $string = get_strings($id);
+    if($string == null){
+        return false;
+    }
     $state = $string['state'];
     if($state == 'off'){
         return false;

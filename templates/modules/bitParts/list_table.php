@@ -6,6 +6,12 @@
                 1 => "LINK 2",
                 2 => "LINK 3",
                 3 => "LINK 4",
+                4 => "LINK 5",
+                5 => "LINK 6",
+                6 => "LINK 7",
+                7 => "LINK 8",
+                8 => "LINK 9",
+                9 => "LINK 10",
             );
         }
         $count = count($info);

@@ -14,6 +14,10 @@
                 echo "<div class='tabs-list'>";             
 
         for($i = 0;$i < $num;$i++){
+            if($array_lists[$i] == null){
+                echo "<p style='display:none;' onmouseover='hover_lists(".$i+$count.")' onmouseout='b_hover_lists(".$i+$count.")' >$array_lists[$i]</p>";
+                continue;
+            }
             echo "<p onmouseover='hover_lists(".$i+$count.")' onmouseout='b_hover_lists(".$i+$count.")' >$array_lists[$i]</p>";
             echo "<a class='btn-beat' ></a>";
         }
@@ -29,6 +33,13 @@
         $num = count($array_lists);
           
         for($i = 0;$i < $num;$i++){
+            if($array_lists[$i] == null){
+                echo "<div style='display:none;' class='btn_tabs '>"; 
+                echo "<p onmouseover='hover_lists(".$i+$count.")' onmouseout='b_hover_lists(".$i+$count.")'>$array_lists[$i]</p>";
+                echo "<a class='btn-beat'></a>";
+                echo "</div>";
+                continue;
+            }
             echo "<div class='btn_tabs '>"; 
             echo "<p onmouseover='hover_lists(".$i+$count.")' onmouseout='b_hover_lists(".$i+$count.")'>$array_lists[$i]</p>";
             echo "<a class='btn-beat'></a>";

@@ -34,9 +34,10 @@
                  return _DIS_;
              }
              $result = mysqli_query($link,$qur);
-             if(!$result){
-                 return _SEL_;
-             }
+            if($result){
+                $qur = "select * from ".TB_L_G_COLUMN." where id = '1'" ;
+                $result = mysqli_query($link,$qur);
+            }
              $values = mysqli_fetch_array($result);
              return $values;
              mysqli_close($link);
@@ -121,8 +122,9 @@ function get_list_groups_row_by_id($id){
         return _DIS_;
     }
     $result = mysqli_query($link,$qur);
-    if(!$result){
-        return _SEL_;
+    if($result){
+        $qur = "select * from ".TB_L_G_ROW." where id = '1'" ;
+        $result = mysqli_query($link,$qur);
     }
     $values = mysqli_fetch_array($result);
     return $values;
@@ -193,7 +195,7 @@ function create_list_groups_row_s($TB_NM){
     }
     mysqli_close($link);
 }
-//    create_list_groups_row_s(TB_L_G_ROW_S);
+   create_list_groups_row_s(TB_L_G_ROW_S);
 
 function get_list_groups_row_s_by_id($id){
     $qur = "select * from ".TB_L_G_ROW_S." where id = '$id'" ;
@@ -202,8 +204,9 @@ function get_list_groups_row_s_by_id($id){
         return _DIS_;
     }
     $result = mysqli_query($link,$qur);
-    if(!$result){
-        return _SEL_;
+    if($result){
+        $qur = "select * from ".TB_L_G_ROW_S." where id = '1'" ;
+        $result = mysqli_query($link,$qur);
     }
     $values = mysqli_fetch_array($result);
     return $values;
