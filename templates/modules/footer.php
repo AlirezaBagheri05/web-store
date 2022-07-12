@@ -18,7 +18,10 @@
             }
             foreach ($ids[$slid] as $value) {
                 global $bits;
-                echo "<script src='".SITE_URL."ui/Js/modules/$value.js' type='text/javascript'></script>";
+                $path =  "ui/Js/modules/$value.js";
+                if(file_exists($path)){
+                    echo "<script src='".SITE_URL."ui/Js/modules/$value.js' type='text/javascript'></script>";
+                }
                 foreach ($bits[$value] as $bit) {
                     $path =  "ui/Js/modules/bitparts/$bit.js";
                     if(file_exists($path)){
@@ -28,7 +31,7 @@
                 }
             }
             echo "<script src='".SITE_URL."ui/Js/$slid.js' rel='stylesheet' type='text/javascript'/></script>";
-            echo '';
+            
 ?>
     <script src="<?PHP echo SITE_URL; ?>ui/Js/modules/setTime.js" type="text/javascript"></script>
     </body>

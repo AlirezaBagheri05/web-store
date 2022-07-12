@@ -25,12 +25,15 @@
             if (!$slid){
                 $slid = "index";
             }
-            $path =  SITE_URL."ui/Css/$slid.css";
+            $path =  "ui/Css/$slid.css";
             if(!file_exists($path)){
                 $slid = 'index';
             }
             foreach ($ids[$slid] as $value) {
+                $path =  "ui/Css/modules/$value.css";
+                if(file_exists($path)){
                     echo "<link href='".SITE_URL."ui/Css/modules/$value.css' rel='stylesheet' type='text/css'/>";
+                }
                 foreach ($bits[$value] as $bit) {
                         $path =  "ui/Css/modules/bitparts/$bit.css";
                         if(file_exists($path)){
