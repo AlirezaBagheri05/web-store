@@ -9,7 +9,7 @@ define('SITE_URL',"$url");
 $url_img = $url."Data/main/img/";
 define("SITE_IMG",$url_img);
 
-define("SITE_NM",'/web-store/');
+define("SITE_NM",'/store_website/');
 
 define('SITE_PATH',__DIR__.DIRECTORY_SEPARATOR);
 

@@ -6,7 +6,7 @@ Options  All -Indexes
 
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteBase  /web-store/
+    RewriteBase  /store_website/
     RewriteRule ^index\.php - [L]
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
